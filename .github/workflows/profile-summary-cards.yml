@@ -1,0 +1,40 @@
+name: GitHub Profile Summary Cards
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - .github/workflows/profile-summary-cards.yml
+  schedule:
+    - cron: "17 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-summary-cards
+  cancel-in-progress: true
+
+jobs:
+  generate:
+    name: Generate profile summary cards
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out profile repository
+        uses: actions/checkout@v4
+
+      - name: Generate repository-local cards
+        uses: vn7n24fzkq/github-profile-summary-cards@release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          USERNAME: ${{ github.repository_owner }}
+          BRANCH_NAME: main
+          UTC_OFFSET: 9
+          AUTO_PUSH: true
+          THEME: tokyonight
+          ANIMATION: load
+          DURATION: 2.5
