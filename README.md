@@ -144,13 +144,13 @@ workflow:
 
 <div align="center">
 
-<img width="100%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=AlexanderGG-0520&theme=tokyonight" alt="GitHub profile summary" />
+<img width="100%" src="./profile-summary-card-output/tokyonight/0-profile-details.svg" alt="GitHub profile summary" />
 
-<img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=AlexanderGG-0520&theme=tokyonight" alt="Repositories per language" />
-<img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=AlexanderGG-0520&theme=tokyonight" alt="Most used commit languages" />
+<img width="49%" src="./profile-summary-card-output/tokyonight/1-repos-per-language.svg" alt="Repositories per language" />
+<img width="49%" src="./profile-summary-card-output/tokyonight/2-most-commit-language.svg" alt="Most used commit languages" />
 
-<img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=AlexanderGG-0520&theme=tokyonight" alt="GitHub stats" />
-<img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=AlexanderGG-0520&theme=tokyonight&utcOffset=9" alt="Productive time" />
+<img width="49%" src="./profile-summary-card-output/tokyonight/3-stats.svg" alt="GitHub stats" />
+<img width="49%" src="./profile-summary-card-output/tokyonight/4-productive-time.svg" alt="Productive time" />
 
 </div>
 
